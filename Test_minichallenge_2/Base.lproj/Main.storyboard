@@ -262,8 +262,8 @@
                                                     <constraint firstAttribute="width" constant="240" id="oWJ-oj-6PN"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkr-7H-MfF">
-                                                <rect key="frame" x="163.5" y="280" width="87" height="45"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkr-7H-MfF">
+                                                <rect key="frame" x="0.0" y="280" width="414" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -316,7 +316,7 @@
                                             <constraint firstItem="bzc-jI-QGu" firstAttribute="trailing" secondItem="b31-h7-fhN" secondAttribute="trailing" constant="10" id="N9f-g9-0iW"/>
                                             <constraint firstItem="Qkr-7H-MfF" firstAttribute="top" secondItem="i9e-hD-Qf7" secondAttribute="bottom" constant="20" id="NZR-nd-Ryi"/>
                                             <constraint firstItem="b31-h7-fhN" firstAttribute="top" secondItem="TAz-xx-lp6" secondAttribute="bottom" constant="20" id="O8C-OK-cnb"/>
-                                            <constraint firstItem="bzc-jI-QGu" firstAttribute="trailing" secondItem="Qkr-7H-MfF" secondAttribute="trailing" constant="163.5" id="Va1-yd-t7q"/>
+                                            <constraint firstItem="bzc-jI-QGu" firstAttribute="trailing" secondItem="Qkr-7H-MfF" secondAttribute="trailing" id="Va1-yd-t7q"/>
                                             <constraint firstItem="TAz-xx-lp6" firstAttribute="leading" secondItem="bzc-jI-QGu" secondAttribute="leading" constant="10" id="X9k-Ap-ctw"/>
                                             <constraint firstItem="5Ct-BU-jey" firstAttribute="top" secondItem="hNe-3A-08N" secondAttribute="bottom" constant="20" id="aUm-Do-4ah"/>
                                             <constraint firstItem="Qkr-7H-MfF" firstAttribute="centerX" secondItem="3OD-XY-6v9" secondAttribute="centerX" id="aow-3S-9Pu"/>
@@ -330,7 +330,7 @@
                                             <constraint firstAttribute="height" constant="1550" id="nQm-vD-VEC"/>
                                             <constraint firstItem="bzc-jI-QGu" firstAttribute="trailing" secondItem="hNe-3A-08N" secondAttribute="trailing" constant="10" id="pSq-1l-ubT"/>
                                             <constraint firstItem="bzc-jI-QGu" firstAttribute="trailing" secondItem="TAz-xx-lp6" secondAttribute="trailing" constant="10" id="rPI-tC-tyx"/>
-                                            <constraint firstItem="Qkr-7H-MfF" firstAttribute="leading" secondItem="bzc-jI-QGu" secondAttribute="leading" constant="163.5" id="tfE-LJ-eCW"/>
+                                            <constraint firstItem="Qkr-7H-MfF" firstAttribute="leading" secondItem="bzc-jI-QGu" secondAttribute="leading" id="tfE-LJ-eCW"/>
                                             <constraint firstItem="bzc-jI-QGu" firstAttribute="trailing" secondItem="BJh-we-a2h" secondAttribute="trailing" constant="10" id="uf2-dH-ceb"/>
                                             <constraint firstItem="b31-h7-fhN" firstAttribute="leading" secondItem="bzc-jI-QGu" secondAttribute="leading" constant="10" id="xNt-ZX-8iT"/>
                                         </constraints>
