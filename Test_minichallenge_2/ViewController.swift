@@ -14,8 +14,8 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
     @IBOutlet weak var collectionView2: UICollectionView!
 
     
-    let impostos = ["icdi","iptu","ipva","irpf","itcd"]
-    let impostosindiretos = ["iof","icms","iss","ipi","ii"]
+    let impostos = ["ITBI","IPTU","IPVA","IRPF","ITCD"]
+    let impostosindiretos = ["IOF","ICMS","ISS","IPI","II"]
     @IBOutlet weak var mylabel: UILabel!
     
     
