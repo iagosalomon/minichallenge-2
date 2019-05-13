@@ -42,6 +42,8 @@ class Impostospage: UIViewController {
     
     
   //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    
     let impostosindiretos = ["IOF","ICMS","ISS","IPI","II"]
     let impostosindiretosoqueeh = ["É um imposto que você paga em cada operação financeira à crédito. Esse imposto é calculado através de uma alíquota que pode variar de banco para banco.",
                                    "É um imposto estadual, ou seja cada estado escolhe a alíquota, que é pago quando um produto desde eletrônicos ate chicletes (importados também) é movimentado de um estado para o outro para a comercialização dele.",
@@ -66,8 +68,9 @@ class Impostospage: UIViewController {
     
     
     
+    @IBOutlet weak var view2: UIView!
     
-    
+    let colors = [#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1),#colorLiteral(red: 0.1760123372, green: 0.5056923628, blue: 1, alpha: 1)]
 
     var seletor: Int?
     var tipoImposto: Int?
@@ -93,6 +96,8 @@ class Impostospage: UIViewController {
             oqueehdescricao.text = "\(impostosoqueeh[seletor!])"
             quandopagodescricao.text = "\(impostosQuando[seletor!])"
             InformacoesTecnicasDescricao.text = "\(impostosInformacoes[seletor!])"
+                view2.backgroundColor = colors[1]
+                view.backgroundColor = colors[1]
 
                 
             }else if (tipoImposto == 2){
@@ -101,6 +106,8 @@ class Impostospage: UIViewController {
                quandopago.text = "Quando pago"
                quandopagodescricao.text = "\(impostosindiretosQuando[seletor!])"
                InformacoesTecnicasDescricao.text = "\(impostosindiretosinformacoes[seletor!])"
+                view2.backgroundColor = colors[0]
+                view.backgroundColor = colors[0]
             }
         }
 

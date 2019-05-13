@@ -35,11 +35,17 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
 
         cell.mylabel.text = impostos[indexPath.item]
+        cell.contentView.layer.cornerRadius = 2.0
+    
         return cell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
             
             cell.mylabel.text = impostosindiretos[indexPath.item]
+            cell.contentView.layer.cornerRadius = 2.0
+            cell.contentView.layer.borderWidth = 1
+            cell.contentView.layer.borderColor = UIColor.clear.cgColor
+            cell.contentView.layer.masksToBounds = true
             return cell
         }
         
