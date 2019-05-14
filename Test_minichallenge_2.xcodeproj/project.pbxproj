@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7D128B6F228349DF001238C9 /* Impostospage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D128B6E228349DF001238C9 /* Impostospage.swift */; };
+		7D46458C228B34A500353EFD /* ITCD.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464582228B34A500353EFD /* ITCD.png */; };
+		7D46458D228B34A500353EFD /* ipva.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464583228B34A500353EFD /* ipva.png */; };
+		7D46458E228B34A500353EFD /* IRPF.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464584228B34A500353EFD /* IRPF.png */; };
+		7D464591228B34A500353EFD /* ITBI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464587228B34A500353EFD /* ITBI.png */; };
+		7D464592228B34A500353EFD /* IPTU.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464588228B34A500353EFD /* IPTU.png */; };
+		7D464594228B393000353EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464593228B393000353EFD /* ViewController.swift */; };
+		7D46459B228B39EA00353EFD /* ISS.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464596228B39EA00353EFD /* ISS.png */; };
+		7D46459C228B39EA00353EFD /* IPI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464597228B39EA00353EFD /* IPI.png */; };
+		7D46459D228B39EA00353EFD /* ICMS.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464598228B39EA00353EFD /* ICMS.png */; };
+		7D46459E228B39EA00353EFD /* II.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464599228B39EA00353EFD /* II.png */; };
+		7D46459F228B39EA00353EFD /* IOF.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D46459A228B39EA00353EFD /* IOF.png */; };
 		7D6722222278E182000A3B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722212278E182000A3B54 /* AppDelegate.swift */; };
-		7D6722242278E182000A3B54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722232278E182000A3B54 /* ViewController.swift */; };
 		7D6722272278E182000A3B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D6722252278E182000A3B54 /* Main.storyboard */; };
 		7D6722292278E183000A3B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D6722282278E183000A3B54 /* Assets.xcassets */; };
 		7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D67222A2278E183000A3B54 /* LaunchScreen.storyboard */; };
@@ -37,9 +47,19 @@
 
 /* Begin PBXFileReference section */
 		7D128B6E228349DF001238C9 /* Impostospage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Impostospage.swift; sourceTree = "<group>"; };
+		7D464582228B34A500353EFD /* ITCD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ITCD.png; sourceTree = "<group>"; };
+		7D464583228B34A500353EFD /* ipva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipva.png; sourceTree = "<group>"; };
+		7D464584228B34A500353EFD /* IRPF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IRPF.png; sourceTree = "<group>"; };
+		7D464587228B34A500353EFD /* ITBI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ITBI.png; sourceTree = "<group>"; };
+		7D464588228B34A500353EFD /* IPTU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IPTU.png; sourceTree = "<group>"; };
+		7D464593228B393000353EFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D464596228B39EA00353EFD /* ISS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISS.png; sourceTree = "<group>"; };
+		7D464597228B39EA00353EFD /* IPI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IPI.png; sourceTree = "<group>"; };
+		7D464598228B39EA00353EFD /* ICMS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICMS.png; sourceTree = "<group>"; };
+		7D464599228B39EA00353EFD /* II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = II.png; sourceTree = "<group>"; };
+		7D46459A228B39EA00353EFD /* IOF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IOF.png; sourceTree = "<group>"; };
 		7D67221E2278E182000A3B54 /* Test_minichallenge_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_minichallenge_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6722212278E182000A3B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D6722232278E182000A3B54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D6722262278E182000A3B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D6722282278E183000A3B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D67222B2278E183000A3B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +98,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D46457E228B34A500353EFD /* Ícones sem nomeação */ = {
+			isa = PBXGroup;
+			children = (
+				7D464582228B34A500353EFD /* ITCD.png */,
+				7D464583228B34A500353EFD /* ipva.png */,
+				7D464584228B34A500353EFD /* IRPF.png */,
+				7D464587228B34A500353EFD /* ITBI.png */,
+				7D464588228B34A500353EFD /* IPTU.png */,
+			);
+			path = "Ícones sem nomeação";
+			sourceTree = "<group>";
+		};
+		7D464595228B39EA00353EFD /* Impostos indiretos */ = {
+			isa = PBXGroup;
+			children = (
+				7D464596228B39EA00353EFD /* ISS.png */,
+				7D464597228B39EA00353EFD /* IPI.png */,
+				7D464598228B39EA00353EFD /* ICMS.png */,
+				7D464599228B39EA00353EFD /* II.png */,
+				7D46459A228B39EA00353EFD /* IOF.png */,
+			);
+			name = "Impostos indiretos";
+			path = "../Impostos indiretos";
+			sourceTree = "<group>";
+		};
 		7D6722152278E182000A3B54 = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +147,15 @@
 			isa = PBXGroup;
 			children = (
 				7D6722212278E182000A3B54 /* AppDelegate.swift */,
-				7D6722232278E182000A3B54 /* ViewController.swift */,
 				7D128B6E228349DF001238C9 /* Impostospage.swift */,
+				7D464593228B393000353EFD /* ViewController.swift */,
 				7D6722252278E182000A3B54 /* Main.storyboard */,
 				7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */,
 				7D6722282278E183000A3B54 /* Assets.xcassets */,
 				7D67222A2278E183000A3B54 /* LaunchScreen.storyboard */,
 				7D67222D2278E183000A3B54 /* Info.plist */,
+				7D464595228B39EA00353EFD /* Impostos indiretos */,
+				7D46457E228B34A500353EFD /* Ícones sem nomeação */,
 			);
 			path = Test_minichallenge_2;
 			sourceTree = "<group>";
@@ -235,9 +282,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D46459B228B39EA00353EFD /* ISS.png in Resources */,
+				7D46458C228B34A500353EFD /* ITCD.png in Resources */,
+				7D46459F228B39EA00353EFD /* IOF.png in Resources */,
+				7D46459D228B39EA00353EFD /* ICMS.png in Resources */,
+				7D46458D228B34A500353EFD /* ipva.png in Resources */,
 				7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */,
+				7D46458E228B34A500353EFD /* IRPF.png in Resources */,
+				7D464591228B34A500353EFD /* ITBI.png in Resources */,
+				7D46459E228B39EA00353EFD /* II.png in Resources */,
+				7D46459C228B39EA00353EFD /* IPI.png in Resources */,
 				7D6722292278E183000A3B54 /* Assets.xcassets in Resources */,
 				7D6722272278E182000A3B54 /* Main.storyboard in Resources */,
+				7D464592228B34A500353EFD /* IPTU.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D128B6F228349DF001238C9 /* Impostospage.swift in Sources */,
-				7D6722242278E182000A3B54 /* ViewController.swift in Sources */,
 				7D6722222278E182000A3B54 /* AppDelegate.swift in Sources */,
+				7D464594228B393000353EFD /* ViewController.swift in Sources */,
 				7DB42C442280D14C0091EA75 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
