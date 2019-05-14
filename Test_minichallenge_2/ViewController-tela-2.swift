@@ -74,9 +74,9 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
             if let calculo = Float(txt){
                 let calculo1 = calculo * 0.1625
                 let calculo2 = calculo - calculo1
-                porcentagemPaga.text = "a porcentagem paga foi de 16,25%"
-                valorTotalDoImposto.text = "valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
-                valorDoProdutoSemImposto.text = "valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
+                porcentagemPaga.text = "A porcentagem paga foi de 16,25%"
+                valorTotalDoImposto.text = "Valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
+                valorDoProdutoSemImposto.text = "Valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
                 }
         }
     }
@@ -85,9 +85,9 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
             if let calculo = Float(txt){
                 let calculo1 = calculo * 0.3325
                 let calculo2 = calculo - calculo1
-                porcentagemPaga.text = "a porcentagem paga foi de 33,25%"
-                valorTotalDoImposto.text = "valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
-                valorDoProdutoSemImposto.text = "valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
+                porcentagemPaga.text = "A porcentagem paga foi de 33,25%"
+                valorTotalDoImposto.text = "Valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
+                valorDoProdutoSemImposto.text = "Valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
                 }
         }
     }
@@ -96,9 +96,9 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
             if let calculo = Float(txt){
                 let calculo1 = calculo * 0.60
                 let calculo2 = calculo - calculo1
-                porcentagemPaga.text = "a porcentagem paga foi de 60,00%"
-                valorTotalDoImposto.text = "valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
-                valorDoProdutoSemImposto.text = "valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
+                porcentagemPaga.text = "A porcentagem paga foi de 60,00%"
+                valorTotalDoImposto.text = "Valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
+                valorDoProdutoSemImposto.text = "Valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
             }
         }
     }
@@ -107,9 +107,9 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
             if let calculo = Float(txt){
                 let calculo1 = calculo * 0.45
                 let calculo2 = calculo - calculo1
-                porcentagemPaga.text = "a porcentagem paga foi de 45,00%"
-                valorTotalDoImposto.text = "valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
-                valorDoProdutoSemImposto.text = "valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
+                porcentagemPaga.text = "A porcentagem paga foi de 45,00%"
+                valorTotalDoImposto.text = "Valor total do imposto é \(String(format: "%.2f", calculo1)) reais"
+                valorDoProdutoSemImposto.text = "Valor pago sem imposto é \(String(format: "%.2f", calculo2)) reais"
                 }
             }
         }
