@@ -256,7 +256,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u0S-HU-0kg">
-                                <rect key="frame" x="20" y="487" width="394" height="293"/>
+                                <rect key="frame" x="10" y="487" width="404" height="293"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Vp-Ih-hvx">
                                     <size key="itemSize" width="144" height="227"/>
@@ -309,7 +309,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RQK-47-ZBT" firstAttribute="top" secondItem="Yej-xQ-uhr" secondAttribute="bottom" constant="20" id="56Z-Su-t6b"/>
-                            <constraint firstItem="u0S-HU-0kg" firstAttribute="leading" secondItem="meZ-yB-sWZ" secondAttribute="leading" constant="20" id="9JP-xV-gkC"/>
+                            <constraint firstItem="u0S-HU-0kg" firstAttribute="leading" secondItem="meZ-yB-sWZ" secondAttribute="leading" constant="10" id="9JP-xV-gkC"/>
                             <constraint firstItem="meZ-yB-sWZ" firstAttribute="trailing" secondItem="RQK-47-ZBT" secondAttribute="trailing" constant="20" id="Ixp-zq-eUX"/>
                             <constraint firstItem="meZ-yB-sWZ" firstAttribute="trailing" secondItem="u0S-HU-0kg" secondAttribute="trailing" id="XIm-Vm-a38"/>
                             <constraint firstItem="5zc-Xy-EUM" firstAttribute="top" secondItem="meZ-yB-sWZ" secondAttribute="top" constant="20" id="Zc4-mG-FxU"/>

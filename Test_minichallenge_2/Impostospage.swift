@@ -74,7 +74,7 @@ class Impostospage: UIViewController {
     
     @IBOutlet weak var view2: UIView!
     
-    let colors = [#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1),#colorLiteral(red: 0.1760123372, green: 0.5056923628, blue: 1, alpha: 1)]
+    let colors = [#colorLiteral(red: 0.1882352941, green: 0.8078431373, blue: 0.5333333333, alpha: 1),#colorLiteral(red: 0.1529411765, green: 0.6274509804, blue: 0.6196078431, alpha: 1)]
 
     var seletor: Int?
     var tipoImposto: Int?

@@ -50,7 +50,7 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
             cell.contentView.layer.borderWidth = 1.0
             cell.contentView.layer.borderColor = UIColor.clear.cgColor
             cell.contentView.layer.masksToBounds = true
-            cell.layer.shadowColor = #colorLiteral(red: 0.1760123372, green: 0.5056923628, blue: 1, alpha: 1)
+            cell.layer.shadowColor = #colorLiteral(red: 0.1529411765, green: 0.6274509804, blue: 0.6196078431, alpha: 1)
             cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
             cell.layer.shadowRadius = 1.0
             cell.layer.shadowOpacity = 1.0
@@ -76,7 +76,7 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
             cell.contentView.layer.borderWidth = 1.0
             cell.contentView.layer.borderColor = UIColor.clear.cgColor
             cell.contentView.layer.masksToBounds = true
-            cell.layer.shadowColor = #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)
+            cell.layer.shadowColor = #colorLiteral(red: 0.1882352941, green: 0.8078431373, blue: 0.5333333333, alpha: 1)
             cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
             cell.layer.shadowRadius = 1.0
             cell.layer.shadowOpacity = 1.0
