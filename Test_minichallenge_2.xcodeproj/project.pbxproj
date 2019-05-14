@@ -16,6 +16,12 @@
 		7D6722372278E183000A3B54 /* Test_minichallenge_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722362278E183000A3B54 /* Test_minichallenge_2Tests.swift */; };
 		7D6722422278E183000A3B54 /* Test_minichallenge_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722412278E183000A3B54 /* Test_minichallenge_2UITests.swift */; };
 		7DB42C442280D14C0091EA75 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */; };
+		878DC760228B0AFC00BB900D /* gasoline.png in Resources */ = {isa = PBXBuildFile; fileRef = 878DC75F228B0AFC00BB900D /* gasoline.png */; };
+		87AE2C562289EC96003CCDB0 /* ViewController-tela-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */; };
+		87AE2C582289F980003CCDB0 /* Celltela2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C572289F980003CCDB0 /* Celltela2.swift */; };
+		87AE2C63228A08E3003CCDB0 /* beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 87AE2C5F228A08E3003CCDB0 /* beer.png */; };
+		87AE2C64228A08E3003CCDB0 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = 87AE2C60228A08E3003CCDB0 /* Group.png */; };
+		87AE2C65228A08E3003CCDB0 /* steak.png in Resources */ = {isa = PBXBuildFile; fileRef = 87AE2C61228A08E3003CCDB0 /* steak.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		7D6722412278E183000A3B54 /* Test_minichallenge_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_minichallenge_2UITests.swift; sourceTree = "<group>"; };
 		7D6722432278E183000A3B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		878DC75F228B0AFC00BB900D /* gasoline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasoline.png; sourceTree = "<group>"; };
+		87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-tela-2.swift"; sourceTree = "<group>"; };
+		87AE2C572289F980003CCDB0 /* Celltela2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celltela2.swift; sourceTree = "<group>"; };
+		87AE2C5F228A08E3003CCDB0 /* beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beer.png; sourceTree = "<group>"; };
+		87AE2C60228A08E3003CCDB0 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		87AE2C61228A08E3003CCDB0 /* steak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steak.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +118,13 @@
 				7D128B6E228349DF001238C9 /* Impostospage.swift */,
 				7D6722252278E182000A3B54 /* Main.storyboard */,
 				7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */,
+				87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */,
 				7D6722282278E183000A3B54 /* Assets.xcassets */,
+				87AE2C5F228A08E3003CCDB0 /* beer.png */,
+				87AE2C60228A08E3003CCDB0 /* Group.png */,
+				878DC75F228B0AFC00BB900D /* gasoline.png */,
+				87AE2C61228A08E3003CCDB0 /* steak.png */,
+				87AE2C572289F980003CCDB0 /* Celltela2.swift */,
 				7D67222A2278E183000A3B54 /* LaunchScreen.storyboard */,
 				7D67222D2278E183000A3B54 /* Info.plist */,
 			);
@@ -235,8 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AE2C64228A08E3003CCDB0 /* Group.png in Resources */,
 				7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */,
+				878DC760228B0AFC00BB900D /* gasoline.png in Resources */,
+				87AE2C63228A08E3003CCDB0 /* beer.png in Resources */,
 				7D6722292278E183000A3B54 /* Assets.xcassets in Resources */,
+				87AE2C65228A08E3003CCDB0 /* steak.png in Resources */,
 				7D6722272278E182000A3B54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D128B6F228349DF001238C9 /* Impostospage.swift in Sources */,
+				87AE2C562289EC96003CCDB0 /* ViewController-tela-2.swift in Sources */,
 				7D6722242278E182000A3B54 /* ViewController.swift in Sources */,
 				7D6722222278E182000A3B54 /* AppDelegate.swift in Sources */,
+				87AE2C582289F980003CCDB0 /* Celltela2.swift in Sources */,
 				7DB42C442280D14C0091EA75 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
