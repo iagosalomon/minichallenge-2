@@ -96,14 +96,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vWN-zQ-Hht">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vWN-zQ-Hht">
                                 <rect key="frame" x="154" y="569" width="134" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="usuarioResponde:" destination="CUx-aM-8gt" eventType="editingDidEnd" id="knn-KH-Pye"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sx-WR-Mvq">
                                 <rect key="frame" x="20" y="345" width="374" height="41"/>
@@ -121,14 +118,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeT-aa-3jO">
-                                <rect key="frame" x="165" y="702" width="89" height="76"/>
+                                <rect key="frame" x="140" y="702" width="134" height="76"/>
+                                <color key="backgroundColor" red="0.0" green="0.64074563979999999" blue="0.62216085200000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="WeE-CH-e80"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Calcular"/>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="calculaImpostos:" destination="CUx-aM-8gt" eventType="touchUpInside" id="sp1-3s-nwt"/>
+                                    <action selector="calculaImpostos:" destination="CUx-aM-8gt" eventType="touchUpInside" id="dmO-iC-Eh0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJX-a5-WWx">
@@ -141,7 +141,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WD-4H-xLR">
-                                <rect key="frame" x="21" y="511" width="377" height="23"/>
+                                <rect key="frame" x="21" y="511" width="372" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="cGb-XJ-WxG"/>
                                 </constraints>
@@ -166,8 +166,9 @@
                             <constraint firstItem="8sx-WR-Mvq" firstAttribute="leading" secondItem="mK3-Md-MRP" secondAttribute="leading" constant="20" id="HWo-BL-udQ"/>
                             <constraint firstItem="Gbb-3N-oC8" firstAttribute="top" secondItem="vWN-zQ-Hht" secondAttribute="top" id="Idq-4c-nmp"/>
                             <constraint firstItem="mK3-Md-MRP" firstAttribute="bottom" secondItem="Gbb-3N-oC8" secondAttribute="bottom" constant="221" id="KtD-Vd-Rd2"/>
-                            <constraint firstItem="jeT-aa-3jO" firstAttribute="leading" secondItem="mK3-Md-MRP" secondAttribute="leading" constant="165" id="TiX-vw-03p"/>
+                            <constraint firstItem="jeT-aa-3jO" firstAttribute="leading" secondItem="mK3-Md-MRP" secondAttribute="leading" constant="140" id="TiX-vw-03p"/>
                             <constraint firstItem="mK3-Md-MRP" firstAttribute="bottom" secondItem="jeT-aa-3jO" secondAttribute="bottom" constant="35" id="WXz-Om-SH1"/>
+                            <constraint firstItem="mK3-Md-MRP" firstAttribute="trailing" secondItem="jeT-aa-3jO" secondAttribute="trailing" constant="140" id="XIJ-yQ-eAD"/>
                             <constraint firstItem="QFa-49-LWG" firstAttribute="top" secondItem="mK3-Md-MRP" secondAttribute="top" id="aJF-G9-zaN"/>
                             <constraint firstItem="1WD-4H-xLR" firstAttribute="centerX" secondItem="jeT-aa-3jO" secondAttribute="centerX" id="bjf-PN-uPA"/>
                             <constraint firstItem="tgI-zd-EKY" firstAttribute="top" secondItem="sJX-a5-WWx" secondAttribute="bottom" constant="8" symbolic="YES" id="cml-x4-rM1"/>
@@ -184,6 +185,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="VALOR" destination="tgI-zd-EKY" id="KYu-iV-ZJg"/>
+                        <outlet property="botao_calcula" destination="jeT-aa-3jO" id="ybs-D4-U7O"/>
                         <outlet property="collectionViewTela2" destination="QFa-49-LWG" id="Ego-qR-wYh"/>
                         <outlet property="nomeObj" destination="8sx-WR-Mvq" id="0kd-Th-LEe"/>
                         <outlet property="porcentagemPaga" destination="sJX-a5-WWx" id="AxM-BQ-Xw3"/>
@@ -338,7 +340,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="meZ-yB-sWZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="r2i-If-ixG"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="r2i-If-ixG"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -501,7 +503,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="rRa-Rj-ftv">
             <objects>
-                <tabBarController id="fSS-9a-2ZP" sceneMemberID="viewController">
+                <tabBarController id="fSS-9a-2ZP" customClass="TabBarController" customModule="Test_minichallenge_2" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Fog-o8-zV7"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9T0-oK-ynU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -510,35 +512,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="gKc-S4-TGa" kind="relationship" relationship="viewControllers" id="qr5-pi-N3P"/>
-                        <segue destination="CUx-aM-8gt" kind="relationship" relationship="viewControllers" id="RMb-Nr-yzH"/>
+                        <segue destination="CUx-aM-8gt" kind="relationship" relationship="viewControllers" id="739-qk-ved"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2l-Ig-0Q1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="751" y="98"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="h6l-0m-bmH">
-            <objects>
-                <viewController id="g1m-9F-Lct" customClass="ViewController" customModule="Test_minichallenge_2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JRa-nK-N7P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiA-cs-3Fd">
-                                <rect key="frame" x="0.0" y="-23" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <viewLayoutGuide key="safeArea" id="iaP-Nc-5FY"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="f5m-TT-IIE"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5u-MJ-8PB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2688" y="686"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
