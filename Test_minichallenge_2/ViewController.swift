@@ -98,6 +98,10 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
     
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Impostos"
+        
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -111,7 +115,13 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
                 (segue.destination as! Impostospage).seletor = collectionView2.indexPathsForSelectedItems![0].item
                 }
             }
+    
+    
+    @objc func keyboardWillChange(notification: Notification){
+        self.navigationController?.navigationBar.topItem?.title = "Impostos"
         
     }
-    
+
+
+}
 

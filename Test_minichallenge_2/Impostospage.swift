@@ -97,6 +97,7 @@ class Impostospage: UIViewController {
         
         if let _ = seletor {
             if (tipoImposto == 1){
+//            self.navigationController?.navigationBar.topItem?.title = "\(impostos[seletor!])"
             labelTitulo.text = "\(impostos[seletor!])"
             oqueehdescricao.text = "\(impostosoqueeh[seletor!])"
             quandopagodescricao.text = "\(impostosQuando[seletor!])"
@@ -108,6 +109,8 @@ class Impostospage: UIViewController {
 
                 
             }else if (tipoImposto == 2){
+                
+//               self.navigationController?.navigationBar.topItem?.title = "\(impostosindiretos[seletor!])"
                labelTitulo.text = "\(impostosindiretos[seletor!])"
                oqueehdescricao.text = "\(impostosindiretosoqueeh[seletor!])"
                quandopago.text = "Quando pago"
@@ -120,6 +123,7 @@ class Impostospage: UIViewController {
         }
 
         // Do any additional setup after loading the view.
+        
     }
     
 

@@ -14,10 +14,8 @@
 		7D464591228B34A500353EFD /* ITBI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464587228B34A500353EFD /* ITBI.png */; };
 		7D464592228B34A500353EFD /* IPTU.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464588228B34A500353EFD /* IPTU.png */; };
 		7D464594228B393000353EFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D464593228B393000353EFD /* ViewController.swift */; };
-		7D46459B228B39EA00353EFD /* ISS.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464596228B39EA00353EFD /* ISS.png */; };
 		7D46459C228B39EA00353EFD /* IPI.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464597228B39EA00353EFD /* IPI.png */; };
 		7D46459D228B39EA00353EFD /* ICMS.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464598228B39EA00353EFD /* ICMS.png */; };
-		7D46459E228B39EA00353EFD /* II.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464599228B39EA00353EFD /* II.png */; };
 		7D46459F228B39EA00353EFD /* IOF.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D46459A228B39EA00353EFD /* IOF.png */; };
 		7D4645A1228BA1CA00353EFD /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4645A0228BA1CA00353EFD /* UITabBarController.swift */; };
 		7D6722222278E182000A3B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722212278E182000A3B54 /* AppDelegate.swift */; };
@@ -27,6 +25,8 @@
 		7D6722372278E183000A3B54 /* Test_minichallenge_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722362278E183000A3B54 /* Test_minichallenge_2Tests.swift */; };
 		7D6722422278E183000A3B54 /* Test_minichallenge_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722412278E183000A3B54 /* Test_minichallenge_2UITests.swift */; };
 		7DB42C442280D14C0091EA75 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */; };
+		7DC7D4EB228C82DF004EB5F0 /* ISS.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7D4EA228C82DF004EB5F0 /* ISS.png */; };
+		7DC7D4ED228C82F0004EB5F0 /* II.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7D4EC228C82F0004EB5F0 /* II.png */; };
 		878DC760228B0AFC00BB900D /* gasoline.png in Resources */ = {isa = PBXBuildFile; fileRef = 878DC75F228B0AFC00BB900D /* gasoline.png */; };
 		87AE2C562289EC96003CCDB0 /* ViewController-tela-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */; };
 		87AE2C582289F980003CCDB0 /* Celltela2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C572289F980003CCDB0 /* Celltela2.swift */; };
@@ -60,10 +60,8 @@
 		7D464587228B34A500353EFD /* ITBI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ITBI.png; sourceTree = "<group>"; };
 		7D464588228B34A500353EFD /* IPTU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IPTU.png; sourceTree = "<group>"; };
 		7D464593228B393000353EFD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D464596228B39EA00353EFD /* ISS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISS.png; sourceTree = "<group>"; };
 		7D464597228B39EA00353EFD /* IPI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IPI.png; sourceTree = "<group>"; };
 		7D464598228B39EA00353EFD /* ICMS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICMS.png; sourceTree = "<group>"; };
-		7D464599228B39EA00353EFD /* II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = II.png; sourceTree = "<group>"; };
 		7D46459A228B39EA00353EFD /* IOF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IOF.png; sourceTree = "<group>"; };
 		7D4645A0228BA1CA00353EFD /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		7D67221E2278E182000A3B54 /* Test_minichallenge_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_minichallenge_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +77,8 @@
 		7D6722412278E183000A3B54 /* Test_minichallenge_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_minichallenge_2UITests.swift; sourceTree = "<group>"; };
 		7D6722432278E183000A3B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		7DC7D4EA228C82DF004EB5F0 /* ISS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ISS.png; path = ../../../Downloads/iconesAtualizados/ISS.png; sourceTree = "<group>"; };
+		7DC7D4EC228C82F0004EB5F0 /* II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = II.png; path = ../../../Downloads/iconesAtualizados/II.png; sourceTree = "<group>"; };
 		878DC75F228B0AFC00BB900D /* gasoline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasoline.png; sourceTree = "<group>"; };
 		87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-tela-2.swift"; sourceTree = "<group>"; };
 		87AE2C572289F980003CCDB0 /* Celltela2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celltela2.swift; sourceTree = "<group>"; };
@@ -127,10 +127,10 @@
 		7D464595228B39EA00353EFD /* Impostos indiretos */ = {
 			isa = PBXGroup;
 			children = (
-				7D464596228B39EA00353EFD /* ISS.png */,
 				7D464597228B39EA00353EFD /* IPI.png */,
+				7DC7D4EA228C82DF004EB5F0 /* ISS.png */,
 				7D464598228B39EA00353EFD /* ICMS.png */,
-				7D464599228B39EA00353EFD /* II.png */,
+				7DC7D4EC228C82F0004EB5F0 /* II.png */,
 				7D46459A228B39EA00353EFD /* IOF.png */,
 			);
 			name = "Impostos indiretos";
@@ -303,7 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D46459B228B39EA00353EFD /* ISS.png in Resources */,
 				7D46458C228B34A500353EFD /* ITCD.png in Resources */,
 				7D46459F228B39EA00353EFD /* IOF.png in Resources */,
 				7D46459D228B39EA00353EFD /* ICMS.png in Resources */,
@@ -311,12 +310,13 @@
 				7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */,
 				7D46458E228B34A500353EFD /* IRPF.png in Resources */,
 				7D464591228B34A500353EFD /* ITBI.png in Resources */,
-				7D46459E228B39EA00353EFD /* II.png in Resources */,
 				7D46459C228B39EA00353EFD /* IPI.png in Resources */,
+				7DC7D4EB228C82DF004EB5F0 /* ISS.png in Resources */,
 				87AE2C64228A08E3003CCDB0 /* Group.png in Resources */,
 				7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */,
 				878DC760228B0AFC00BB900D /* gasoline.png in Resources */,
 				87AE2C63228A08E3003CCDB0 /* beer.png in Resources */,
+				7DC7D4ED228C82F0004EB5F0 /* II.png in Resources */,
 				7D6722292278E183000A3B54 /* Assets.xcassets in Resources */,
 				87AE2C65228A08E3003CCDB0 /* steak.png in Resources */,
 				7D6722272278E182000A3B54 /* Main.storyboard in Resources */,

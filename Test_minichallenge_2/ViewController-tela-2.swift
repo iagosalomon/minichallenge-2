@@ -78,7 +78,8 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     
     if (paginaAtual == 0) {
         if let txt = usuarioResponde.text {
-            if let calculo = Float(txt){
+            let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
+            if let calculo = Float(txtfixed){
                 let calculo1 = calculo * 0.1625
                 let calculo2 = calculo - calculo1
                 porcentagemPaga.text = "A porcentagem paga foi de 16,25%"
@@ -92,7 +93,8 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     }
     if (paginaAtual == 1) {
         if let txt = usuarioResponde.text {
-            if let calculo = Float(txt){
+            let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
+            if let calculo = Float(txtfixed){
                 let calculo1 = calculo * 0.3325
                 let calculo2 = calculo - calculo1
                 porcentagemPaga.text = "A porcentagem paga foi de 33,25%"
@@ -105,7 +107,8 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     }
     if (paginaAtual == 2) {
         if let txt = usuarioResponde.text {
-            if let calculo = Float(txt){
+            let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
+            if let calculo = Float(txtfixed){
                 let calculo1 = calculo * 0.60
                 let calculo2 = calculo - calculo1
                 porcentagemPaga.text = "A porcentagem paga foi de 60,00%"
@@ -117,7 +120,8 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     }
    if (paginaAtual == 3) {
         if let txt = usuarioResponde.text {
-            if let calculo = Float(txt){
+            let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
+            if let calculo = Float(txtfixed){
                 let calculo1 = calculo * 0.45
                 let calculo2 = calculo - calculo1
                 porcentagemPaga.text = "A porcentagem paga foi de 45,00%"
@@ -134,15 +138,9 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
         usuarioResponde.delegate = self
         
         botao_calcula.layer.cornerRadius = 10
-//        let viewteclado = UIView()
-//        viewteclado.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 80)
-//        let returnbutton = UIButton(type: .custom)
-//        returnbutton.setTitle("return", for: .normal)
-//        returnbutton.frame = CGRect(x: UIScreen.main.bounds.width - CGFloat(150), y: 0, width: 150, height: 20)
-//        viewteclado.addSubview(returnbutton)
-//        returnbutton.tintColor = UIColor.black
-//        returnbutton.addTarget(self, action: #selector(returnpressed), for: .touchUpInside)
-//        usuarioResponde.inputAccessoryView = viewteclado
+        
+    
+        
         
         
         
@@ -153,6 +151,10 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
 
         
 }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Calculadora"
+    }
     
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -167,12 +169,10 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
         
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        usuarioResponde.resignFirstResponder()
-        
-        return true
-    }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        usuarioResponde.resignFirstResponder()
+    }
     
     
     // make the screen go up
