@@ -12,6 +12,7 @@ class Impostospage: UIViewController {
     
     
     let impostos = ["ITBI","IPTU","IPVA","IRPF","ITCD"]
+    let impostosExtenso = ["Imposto sobre a transmissão de bens imóveis","Imposto Predial e Territorial Urbano","Imposto sobre a Propriedade de Veículos Automotores","Imposto de Renda de Pessoa Física","Imposto sobre Transmissão Causa Mortis e Doação de Quaisquer Bens ou Direitos"]
     let impostosimage = ["ITBI.png","IPTU.png","ipva.png","IRPF.png","ITCD.png"]
     let impostosoqueeh = ["É um imposto cobrado pelas Prefeituras Municipais para transferir o imóvel para o novo proprietário.",
                           "É um imposto cobrado de quem tem um imóvel urbano. Isto é, casa, apartamento, sala comercial ou qualquer outro tipo de propriedade em uma região urbanizada.",
@@ -46,6 +47,7 @@ class Impostospage: UIViewController {
   //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
+    let impostosindiretosExtenso = ["Impostos sobre operações financeiras","Imposto sobre Circulação de Mercadorias e Serviços","Impostos sobre serviços","imposto sobre os produtos industrializados","Imposto de importação"]
     let impostosindiretos = ["IOF","ICMS","ISS","IPI","II"]
     let impostosindiretosimage = ["IOF.png","ICMS.png","ISS.png","IPI.png","II.png"]
 
@@ -98,32 +100,40 @@ class Impostospage: UIViewController {
         if let _ = seletor {
             if (tipoImposto == 1){
 //            self.navigationController?.navigationBar.topItem?.title = "\(impostos[seletor!])"
-            labelTitulo.text = "\(impostos[seletor!])"
+            labelTitulo.text = "\(impostosExtenso[seletor!])"
             oqueehdescricao.text = "\(impostosoqueeh[seletor!])"
             quandopagodescricao.text = "\(impostosQuando[seletor!])"
             InformacoesTecnicasDescricao.text = "\(impostosInformacoes[seletor!])"
-                view2.backgroundColor = colors[1]
-                view.backgroundColor = colors[1]
-                imagemImpostosPage.image = UIImage(named: impostosimage[seletor!])
+            
+            view2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            imagemImpostosPage.image = UIImage(named: impostosimage[seletor!])
+            self.navigationItem.title = "\(impostos[seletor!])"
+            self.navigationController?.navigationBar.barTintColor = colors[1]
                 
 
                 
             }else if (tipoImposto == 2){
                 
 //               self.navigationController?.navigationBar.topItem?.title = "\(impostosindiretos[seletor!])"
-               labelTitulo.text = "\(impostosindiretos[seletor!])"
+               labelTitulo.text = "\(impostosindiretosExtenso[seletor!])"
                oqueehdescricao.text = "\(impostosindiretosoqueeh[seletor!])"
                quandopago.text = "Quando pago"
                quandopagodescricao.text = "\(impostosindiretosQuando[seletor!])"
                InformacoesTecnicasDescricao.text = "\(impostosindiretosinformacoes[seletor!])"
-                view2.backgroundColor = colors[0]
-                view.backgroundColor = colors[0]
+                
                 imagemImpostosPage.image = UIImage(named: impostosindiretosimage[seletor!])
+                self.navigationController?.navigationBar.topItem?.title = "\(impostos[seletor!])"
+                view2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                self.navigationItem.title = "\(impostos[seletor!])"
+                self.navigationController?.navigationBar.barTintColor = colors[0]
             }
         }
 
         // Do any additional setup after loading the view.
         
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
 

@@ -99,7 +99,9 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.navigationController?.navigationBar.topItem?.title = "Impostos"
+        
         
     }
 
