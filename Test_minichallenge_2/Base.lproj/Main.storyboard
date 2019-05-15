@@ -181,7 +181,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mK3-Md-MRP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="calculadora cinza" id="O0g-c6-Aij"/>
+                    <tabBarItem key="tabBarItem" image="Group 4" id="O0g-c6-Aij"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="VALOR" destination="tgI-zd-EKY" id="KYu-iV-ZJg"/>
@@ -340,7 +340,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="meZ-yB-sWZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="cifrao" id="r2i-If-ixG"/>
+                    <tabBarItem key="tabBarItem" image="$" id="r2i-If-ixG"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -520,8 +520,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calculadora cinza" width="28" height="30"/>
-        <image name="cifrao" width="17" height="27"/>
+        <image name="$" width="20" height="28"/>
+        <image name="Group 4" width="24" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kFv-98-aLh"/>
