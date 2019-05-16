@@ -6,18 +6,22 @@
 //  Copyright © 2019 iago salomon. All rights reserved.
 //
 
+//Tela de selecao do imposto
+
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource , UICollectionViewDelegate{
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var collectionView2: UICollectionView!
+    //Declaracao das duas collections views
+    
+    @IBOutlet weak var collectionView: UICollectionView! // tag = 1
+    @IBOutlet weak var collectionView2: UICollectionView!// tag = 2
     
     
-    
+    // vetores das informacoes do view
     let impostos = ["ITBI","IPTU","IPVA","IRPF","ITCD"]
     let impostosimage = ["ITBI.png","IPTU.png","ipva.png","IRPF.png","ITCD.png"]
-
+    
     
     
     
@@ -25,14 +29,14 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
     let impostosindiretosimage = ["IOF.png","ICMS.png","ISS.png","IPI.png","II.png"]
     
     
-        @IBOutlet weak var mylabel: UILabel!
+    @IBOutlet weak var mylabel: UILabel!
     
     
     
-    
+    //funcao que define o numero de celulas nas collections views
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if (collectionView.tag == 1){
-        return impostos.count
+            return impostos.count
         }else{
             return impostosindiretos.count
         }
@@ -40,12 +44,16 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
     }
     
     
+    
+    // funcao que define oque aparece na collection view
     internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (collectionView.tag == 1){
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-
-        cell.mylabel.text = impostos[indexPath.item]
-        
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+            //define texto da celula
+            cell.mylabel.text = impostos[indexPath.item]
+            
+            
+            //coloca bordas arredondadas e sombra na celula
             cell.contentView.layer.cornerRadius = 10.0
             cell.contentView.layer.borderWidth = 1.0
             cell.contentView.layer.borderColor = UIColor.clear.cgColor
@@ -58,20 +66,21 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
             cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
             
             
-            
+            //define a imagem da celula
             cell.imagemCell.image = UIImage(named: impostosimage[indexPath.item])
-
             
             
             
-        return cell
+            
+            return cell
         }else{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
             
+            //define texto da celula
             cell.mylabel.text = impostosindiretos[indexPath.item]
             
             
-            
+            //coloca bordas arredondadas e sombra na celula
             cell.contentView.layer.cornerRadius = 10.0
             cell.contentView.layer.borderWidth = 1.0
             cell.contentView.layer.borderColor = UIColor.clear.cgColor
@@ -84,8 +93,9 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
             cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
             
             
+            //define a imagem da celula
             cell.imagemCell2.image = UIImage(named: impostosindiretosimage[indexPath.item])
-        
+            
             return cell
         }
         
@@ -93,37 +103,57 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
     
     
     
+    
+    //funcao chamada quando a tela carrega
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         // Do any additional setup after loading the view.
     }
+    
+    
+    
+    
+    
+    
+    
+    // funcao que reseta a tab bar quando transiciona para essa tela
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.navigationController?.navigationBar.topItem?.title = "Impostos"
         
         
     }
-
+    
+    
+    
+    
+    
+    
+    // Funcao que manda informacoes para as tela de explicao de impostos
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // envia um seletor para ser usado para montar a tela de impostos
+        
         if segue.identifier! == "Impostospage"{
+            // envia um seletor para falar se o imposto eh direto ou indireto
             (segue.destination as! Impostospage).tipoImposto = 1
+            //Manda qual imposto que eh
             (segue.destination as! Impostospage).seletor = collectionView.indexPathsForSelectedItems![0].item
-            }
-            
-            if segue.identifier! == "Impostospage2"{
-                (segue.destination as! Impostospage).tipoImposto = 2
-                (segue.destination as! Impostospage).seletor = collectionView2.indexPathsForSelectedItems![0].item
-                }
-            }
+        }
+        
+        if segue.identifier! == "Impostospage2"{
+            (segue.destination as! Impostospage).tipoImposto = 2
+            (segue.destination as! Impostospage).seletor = collectionView2.indexPathsForSelectedItems![0].item
+        }
+    }
     
     
     @objc func keyboardWillChange(notification: Notification){
         self.navigationController?.navigationBar.topItem?.title = "Impostos"
         
     }
-
-
+    
+    
 }
 

@@ -10,7 +10,11 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    
+    // label das duas celulas
     @IBOutlet weak var mylabel: UILabel!
+    
+    //Imagens das duas celulas
     @IBOutlet weak var imagemCell: UIImageView!
     @IBOutlet weak var imagemCell2: UIImageView!
     

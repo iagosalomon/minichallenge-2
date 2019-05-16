@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        //Coloca um timer na launch screen para ela demorar mais tempo nela e dar tempo do usuario ver o logo
         sleep(1);
         // Override point for customization after application launch.
         return true

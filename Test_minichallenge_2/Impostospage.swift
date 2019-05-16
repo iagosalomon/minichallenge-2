@@ -6,10 +6,13 @@
 //  Copyright © 2019 iago salomon. All rights reserved.
 //
 
+
+//tela dos impostos
 import UIKit
 
 class Impostospage: UIViewController {
     
+    // Informacoes dos impostos diretos
     
     let impostos = ["ITBI","IPTU","IPVA","IRPF","ITCD"]
     let impostosExtenso = ["Imposto sobre a transmissão de bens imóveis","Imposto Predial e Territorial Urbano","Imposto sobre a Propriedade de Veículos Automotores","Imposto de Renda de Pessoa Física","Imposto sobre Transmissão Causa Mortis e Doação de Quaisquer Bens ou Direitos"]
@@ -44,13 +47,15 @@ class Impostospage: UIViewController {
     
     
     
-  //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
+    
+    //Informacoes dos impostos indiretos
     
     let impostosindiretosExtenso = ["Impostos sobre operações financeiras","Imposto sobre Circulação de Mercadorias e Serviços","Impostos sobre serviços","imposto sobre os produtos industrializados","Imposto de importação"]
     let impostosindiretos = ["IOF","ICMS","ISS","IPI","II"]
     let impostosindiretosimage = ["IOF.png","ICMS.png","ISS.png","IPI.png","II.png"]
-
+    
     let impostosindiretosoqueeh = ["É um imposto que você paga em cada operação financeira à crédito. Esse imposto é calculado através de uma alíquota que pode variar de banco para banco.",
                                    "É um imposto estadual, ou seja cada estado escolhe a alíquota, que é pago quando um produto desde eletrônicos ate chicletes (importados também) é movimentado de um estado para o outro para a comercialização dele.",
                                    "É um imposto municipal na qual é cobrado das empresas e pessoas autônomas pelos seus serviços prestados, desde hospitais como médicos até telemarketing.",
@@ -71,15 +76,24 @@ class Impostospage: UIViewController {
                                         "A alíquota pode ser fixa, variável ou zero que será multiplicado pelo valor do produto, você  consegue ver essa alíquota nas tabelas disponibilizadas pelo governo. Se o governo aumentar o IPI, não será a empresa que sairá perdendo, será os consumidores finais pois irá aumentar o valor dos produtos, desde caixa de relógios ate armas brancas.",
                                         "Fica isento do imposto quando o produto tem um prazo certo para sair do território nacional e é extrafiscal ou seja não espera entrar em vigor só no outro ano, se aumentar a alíquota um dia(hoje ela está com 60% do produto mais frete e seguro), no outro dia se fizer uma compra e ela for taxada na Alfândega ja será com a alíquota nova."]
     
+    //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
-    
+    //seletor da view dentro da scrollview
     @IBOutlet weak var view2: UIView!
     
+    
+    //cores usadas nos cards
     let colors = [#colorLiteral(red: 0.1882352941, green: 0.8078431373, blue: 0.5333333333, alpha: 1),#colorLiteral(red: 0.1529411765, green: 0.6274509804, blue: 0.6196078431, alpha: 1)]
-
+    
+    //Variavel que ira ser definida pelo segue da viewControl
     var seletor: Int?
+    
+    //  Variavel do tipo de imposto
     var tipoImposto: Int?
+    
+    
+    //Todas as labels e a imagem da tela
     @IBOutlet weak var oqueeh: UILabel!
     @IBOutlet weak var oqueehdescricao: UILabel!
     @IBOutlet weak var quandopago: UILabel!
@@ -89,37 +103,45 @@ class Impostospage: UIViewController {
     
     @IBOutlet weak var imagemImpostosPage: UIImageView!
     @IBOutlet weak var labelTitulo: UILabel!
-
     
+    
+    
+    //Funcao chamada quando a tela carrega
     override func viewDidLoad() {
         
         
         
         super.viewDidLoad()
         
+        
+        
         if let _ = seletor {
-            if (tipoImposto == 1){
-//            self.navigationController?.navigationBar.topItem?.title = "\(impostos[seletor!])"
-            labelTitulo.text = "\(impostosExtenso[seletor!])"
-            oqueehdescricao.text = "\(impostosoqueeh[seletor!])"
-            quandopagodescricao.text = "\(impostosQuando[seletor!])"
-            InformacoesTecnicasDescricao.text = "\(impostosInformacoes[seletor!])"
             
-            view2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            imagemImpostosPage.image = UIImage(named: impostosimage[seletor!])
-            self.navigationItem.title = "\(impostos[seletor!])"
-            self.navigationController?.navigationBar.barTintColor = colors[1]
+            
+            // Criador da tela se for Imposto direto
+            if (tipoImposto == 1){
+                labelTitulo.text = "\(impostosExtenso[seletor!])"
+                oqueehdescricao.text = "\(impostosoqueeh[seletor!])"
+                quandopagodescricao.text = "\(impostosQuando[seletor!])"
+                InformacoesTecnicasDescricao.text = "\(impostosInformacoes[seletor!])"
                 
-
+                view2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+                imagemImpostosPage.image = UIImage(named: impostosimage[seletor!])
+                self.navigationItem.title = "\(impostos[seletor!])"
+                self.navigationController?.navigationBar.barTintColor = colors[1]
                 
+                
+                
+                
+                // Criador da tela se for impostto indireto
             }else if (tipoImposto == 2){
                 
-//               self.navigationController?.navigationBar.topItem?.title = "\(impostosindiretos[seletor!])"
-               labelTitulo.text = "\(impostosindiretosExtenso[seletor!])"
-               oqueehdescricao.text = "\(impostosindiretosoqueeh[seletor!])"
-               quandopago.text = "Quando pago"
-               quandopagodescricao.text = "\(impostosindiretosQuando[seletor!])"
-               InformacoesTecnicasDescricao.text = "\(impostosindiretosinformacoes[seletor!])"
+                
+                labelTitulo.text = "\(impostosindiretosExtenso[seletor!])"
+                oqueehdescricao.text = "\(impostosindiretosoqueeh[seletor!])"
+                quandopago.text = "Quando pago"
+                quandopagodescricao.text = "\(impostosindiretosQuando[seletor!])"
+                InformacoesTecnicasDescricao.text = "\(impostosindiretosinformacoes[seletor!])"
                 
                 imagemImpostosPage.image = UIImage(named: impostosindiretosimage[seletor!])
                 self.navigationController?.navigationBar.topItem?.title = "\(impostos[seletor!])"
@@ -128,13 +150,16 @@ class Impostospage: UIViewController {
                 self.navigationController?.navigationBar.barTintColor = colors[0]
             }
         }
-
+        
         // Do any additional setup after loading the view.
         
     }
+    
+    // fucao para setar a nav bar branca quando sair da tela
+    // Essa funcao eh chamada toda a vez que a tela for desaparecer
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
     
-
+    
 }
