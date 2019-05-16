@@ -56,26 +56,25 @@ class Impostospage: UIViewController {
     let impostosindiretos = ["IOF","ICMS","ISS","IPI","II"]
     let impostosindiretosimage = ["IOF.png","ICMS.png","ISS.png","IPI.png","II.png"]
     
-    let impostosindiretosoqueeh = ["É um imposto que você paga em cada operação financeira à crédito. Esse imposto é calculado através de uma alíquota que pode variar de banco para banco.",
-                                   "É um imposto estadual, ou seja cada estado escolhe a alíquota, que é pago quando um produto desde eletrônicos ate chicletes (importados também) é movimentado de um estado para o outro para a comercialização dele.",
-                                   "É um imposto municipal na qual é cobrado das empresas e pessoas autônomas pelos seus serviços prestados, desde hospitais como médicos até telemarketing.",
-                                   "É um imposto federal que é cobrado sempre que um produto sai da fabrica para a comercialização ou direto no porto quando o produto é importado.",
-                                   "É um imposto que você paga quando existe importação de produtos estrangeiros e entra no território nacional. "]
+    let impostosindiretosoqueeh = ["É um imposto que você paga em cada operação financeira à crédito. Esse imposto é calculado por meio de uma alíquota que pode variar de banco para banco.",
+                                   "É um imposto estadual, ou seja, cada estado escolhe a alíquota, que é pago quando um produto desde eletrônicos ate chicletes (importados também) é movimentado de um estado para o outro para a comercialização dele.",
+                                   "É um imposto municipal, na qual é cobrado das empresas e pessoas autônomas pelos seus serviços prestados, desde médicos até telemarketing.",
+                                   "É um imposto federal que é cobrado sempre que um produto sai da fábrica para a comercialização ou direto no porto quando o produto é importado.",
+                                   "É um imposto que você paga quando existe importação de produtos estrangeiros e entra no território nacional."]
     
     
     let impostosindiretosQuando = ["- Comprando com o cartão  mas deixando a parcela vencer.\n- Pegando um empréstimo.\n- Usando o cheque especial.\n- Compra e venda de moedas estrangeiras.\n- Comprando um carro.",
                                    " - Venda e transferência de produtos;\n- Transporte entre municípios ou estados brasileiros, seja de bens, pessoas ou valores;\n- Importação de mercadorias, mesmo que para consumo próprio e não com o objetivo de revenda;\n- Prestação de serviço no exterior;\n- Serviços de telecomunicação.",
-                                   "A forma de pagamento varia do tipo de serviços:\n\n- Autônomo: Só irá pagar quando fizer algum serviço, assim retira a nota fiscal na prefeitura já com o valor do imposto para pagar.\n- MEI: até 60.000 reais anuais irá pagar uma quanta mensal 51,85 reais. Onde esse valor vai modificando a cada ano pelo governo.",
+                                   "A forma de pagamento varia conforme o tipo de serviço:\n\n- Autônomo: Só irá pagar quando fizer algum serviço. Assim, retira a nota fiscal na Prefeitura já com o valor do imposto para pagar.\n- MEI: até 60.000 reais anuais irá pagar uma quanta mensal 51,85 reais, tal que esse valor é modificado a cada ano pelo governo.",
                                    "- Quando é feito uma compra, por exemplo no atacadista de um vinho que é estrangeiro.\n- Quando compramos alguma bebida alcoólica.\n- Quando se compra um carro.",
-                                   "- Quando compra algo estrangeiro com intuito de entrar dentro do Brasil e é taxado na alfandega com esse imposto.\n- Livros, revistas e jornais são alguns dos produtos que não serão taxados com esse imposto."]
+                                   "- Quando compra algo estrangeiro com o intuito de entrar dentro do Brasil e é taxado na alfândega com esse imposto.\n- Livros, revistas e jornais são alguns dos produtos que não serão taxados com esse imposto."]
     
-    
-    let impostosindiretosinformacoes = ["Para compras no exterior existe uma taxa que varia para cada banco mas para comprar com real convertido para dólar dentro do exterior fica em torno de 3%.",
-                                        "A alíquota que é a porcentagem cobrada pode variar de estado para estado, mas esta entre 17% até 18%, exemplo um produto sai do paraná para são Paulo e custa 100,00 reais e alíquota 18% então ficaria: 100.18%=118,00.",
-                                        "A isenção do ISS só acontece quando o serviço prestado será fora do território nacional e o valor pago é moeda estrangeira. É necessário ver o fato gerador de cada caso para a isenção desse imposto.\nQuando não pago é aplicado uma multa à juros mora por inadimplência.\nA alíquota do autônomo vai de 2% a 5% e é pago mensalmente ate o 10 dia subsequente.",
-                                        "A alíquota pode ser fixa, variável ou zero que será multiplicado pelo valor do produto, você  consegue ver essa alíquota nas tabelas disponibilizadas pelo governo. Se o governo aumentar o IPI, não será a empresa que sairá perdendo, será os consumidores finais pois irá aumentar o valor dos produtos, desde caixa de relógios ate armas brancas.",
-                                        "Fica isento do imposto quando o produto tem um prazo certo para sair do território nacional e é extrafiscal ou seja não espera entrar em vigor só no outro ano, se aumentar a alíquota um dia(hoje ela está com 60% do produto mais frete e seguro), no outro dia se fizer uma compra e ela for taxada na Alfândega ja será com a alíquota nova."]
-    
+    let impostosindiretosinformacoes = ["Para compras no exterior, há uma taxa que varia para cada banco; mas para comprar real e convertê-lo para dólar no exterior fica em torno de 3%.",
+                                        "A alíquota pode variar de estado para estado, mas está entre 17% e 18%. Por exemplo, um produto sai do Paraná para São Paulo e custa 100,00 reais. Tendo-se em vista que a alíquota equivale a 18%, ficaria: 100.18% = 118,00.",
+                                        "A isenção do ISS só acontece quando o serviço prestado ocorre fora do território nacional e é utilizada a moeda estrangeira. É necessário ver o fato gerador de cada caso para a isenção desse imposto.\nQuando não pago é aplicado uma multa à juros mora por inadimplência.\nA alíquota do autônomo vai de 2% a 5% e é pago mensalmente até o 10 dia subsequente.",
+                                        "A alíquota pode ser fixa, variável ou zero que será multiplicado pelo valor do produto. Você  consegue ver essa alíquota nas tabelas disponibilizadas pelo governo. Se o governo aumentar o IPI, não será a empresa que sairá perdendo, mas sim os consumidores finais. Isto porque irá aumentar o valor dos produtos, desde caixa de relógios até armas brancas.",
+                                        "Fica isento do imposto quando o produto tem um prazo certo para sair do território nacional e é extrafiscal. Ou seja, não espera entrar em vigor só no outro ano, mesmo se aumentar a alíquota um dia. No outro dia, se você fizer uma compra e ela for taxada na Alfândega, já será com a alíquota nova."]
+
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
