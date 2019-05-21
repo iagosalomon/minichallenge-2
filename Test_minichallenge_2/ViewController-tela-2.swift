@@ -19,7 +19,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     
     
     //Vetores das informacoes dos produtos e das respectivas imagens
-    let carne : [String] = ["Carne","Cerveja", "Celular","Gasolina"]
+    let carne : [String] = ["CARNE","CERVEJA", "CELULAR","GASOLINA"]
     var image :[String] = ["steak.png", "beer.png", "Group.png","gasoline.png"]
     
     

@@ -154,7 +154,7 @@ class Impostospage: UIViewController {
         
     }
     
-    // fucao para setar a nav bar branca quando sair da tela
+    // funcao para setar a nav bar branca quando sair da tela
     // Essa funcao eh chamada toda a vez que a tela for desaparecer
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
