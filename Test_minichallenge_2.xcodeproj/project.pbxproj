@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D128B6F228349DF001238C9 /* Impostospage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D128B6E228349DF001238C9 /* Impostospage.swift */; };
-		7D2BC05022946917003695BD /* II.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2BC04F22946917003695BD /* II.png */; };
+		7D2BC05222946AC5003695BD /* II.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2BC05122946AC5003695BD /* II.png */; };
 		7D46458C228B34A500353EFD /* ITCD.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464582228B34A500353EFD /* ITCD.png */; };
 		7D46458D228B34A500353EFD /* ipva.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464583228B34A500353EFD /* ipva.png */; };
 		7D46458E228B34A500353EFD /* IRPF.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D464584228B34A500353EFD /* IRPF.png */; };
@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		7D128B6E228349DF001238C9 /* Impostospage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Impostospage.swift; sourceTree = "<group>"; };
-		7D2BC04F22946917003695BD /* II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = II.png; path = "../Test_minichallenge_2/Ícones sem nomeação/II.png"; sourceTree = "<group>"; };
+		7D2BC05122946AC5003695BD /* II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = II.png; sourceTree = "<group>"; };
 		7D464582228B34A500353EFD /* ITCD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ITCD.png; sourceTree = "<group>"; };
 		7D464583228B34A500353EFD /* ipva.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipva.png; sourceTree = "<group>"; };
 		7D464584228B34A500353EFD /* IRPF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IRPF.png; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 			children = (
 				7D464597228B39EA00353EFD /* IPI.png */,
 				7DC7D4EA228C82DF004EB5F0 /* ISS.png */,
+				7D2BC05122946AC5003695BD /* II.png */,
 				7D464598228B39EA00353EFD /* ICMS.png */,
-				7D2BC04F22946917003695BD /* II.png */,
 				7D46459A228B39EA00353EFD /* IOF.png */,
 			);
 			name = "Impostos indiretos";
@@ -316,7 +316,7 @@
 				7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */,
 				878DC760228B0AFC00BB900D /* gasoline.png in Resources */,
 				87AE2C63228A08E3003CCDB0 /* beer.png in Resources */,
-				7D2BC05022946917003695BD /* II.png in Resources */,
+				7D2BC05222946AC5003695BD /* II.png in Resources */,
 				7D6722292278E183000A3B54 /* Assets.xcassets in Resources */,
 				87AE2C65228A08E3003CCDB0 /* steak.png in Resources */,
 				7D6722272278E182000A3B54 /* Main.storyboard in Resources */,
