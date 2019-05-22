@@ -11,7 +11,7 @@
 
 import UIKit
 
-class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollectionViewDataSource,UITextFieldDelegate {
+class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollectionViewDataSource,UITextFieldDelegate,UICollectionViewDelegate {
     
     
     // declaracao da collection view
@@ -20,7 +20,8 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     
     //Vetores das informacoes dos produtos e das respectivas imagens
     let carne : [String] = ["CARNE","CERVEJA", "CELULAR","GASOLINA"]
-    var image :[String] = ["steak.png", "beer.png", "Group.png","gasoline.png"]
+    var image :[String] = ["steak.png", "beer.png", "cell.png","gasoline.png"]
+    var imagePB :[String] = ["steakPB.png", "beerPB.png", "cellPB.png","gasoline.png"]
     
     
     
@@ -38,11 +39,12 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
         //cria a celula
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Celltela2
         // define o conteudo das celulas
+        
         cell.lablelTela2Cell.text = carne[indexPath.item]
-        cell.imagetela2.image = UIImage (named: image[indexPath.item])
+        cell.imagetela2.image = UIImage (named: imagePB[indexPath.item])
         
         // define a tag de cada celula
-        cell.botao.tag = indexPath.item
+//        cell.botao.tag = indexPath.item
         
         
         // arredonda a borda da celula para ficar parecido com um card
@@ -53,7 +55,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     
     
     // Variavel usada para falar qual a pagina eh a atual
-    var paginaAtual = 0
+    var paginaAtual : IndexPath = [];
     
     
     // Labes da pagina e text field
@@ -69,43 +71,100 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     @IBOutlet weak var botao_calcula: UIButton!
     
     
-    //Funcao chamada toda a vez que se troca de pagina ou card que apaga as informacoes da pagina antiga e as deixa em branco e Coloca o Nome da pagina selecionada
-    @IBAction func MUDAASCOISAS(_ sender: Any) {
-        if((sender as AnyObject).tag! == 0){
+    func MudaIcones(paginaAtual : IndexPath , novaPagina: IndexPath){
+        
+        if (paginaAtual == []){
+            print("foi aqui")
+            (collectionView(collectionViewTela2, cellForItemAt: novaPagina) as! Celltela2).imagetela2.image = UIImage(named: image[novaPagina.item])
+            collectionViewTela2.reloadData()
+        
+        }else{
+        print("foi la")
+        (collectionView(collectionViewTela2, cellForItemAt: paginaAtual) as! Celltela2).imagetela2.image = UIImage (named: imagePB[paginaAtual.item])
+        (collectionView(collectionViewTela2, cellForItemAt: novaPagina) as! Celltela2).imagetela2.image = UIImage(named: image[novaPagina.item])
+        collectionViewTela2.reloadData()
+        
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("entrou")
+        if(indexPath.item == 0){
             //Coloca o nome da pagina selecionada
-            nomeObj.text = carne[(sender as AnyObject).tag!]
-            
+            nomeObj.text = carne[indexPath.item]
+            MudaIcones(paginaAtual : paginaAtual, novaPagina: indexPath)
             //Seta a variavel de pagina atual para o programa saber onde esta
-            paginaAtual = (sender as AnyObject).tag!
+            paginaAtual = indexPath
             
             //apaga as informacoes da tela antiga
             porcentagemPaga.text = ""
             valorTotalDoImposto.text = ""
             valorDoProdutoSemImposto.text = ""
         }
-        if((sender as AnyObject).tag! == 1){
-            nomeObj.text = carne[(sender as AnyObject).tag!]
-            paginaAtual = (sender as AnyObject).tag!
+        if(indexPath.item == 1){
+            nomeObj.text = carne[indexPath.item]
+            MudaIcones(paginaAtual : paginaAtual, novaPagina: indexPath)
+            paginaAtual = indexPath
             porcentagemPaga.text = ""
             valorTotalDoImposto.text = ""
             valorDoProdutoSemImposto.text = ""
         }
-        if((sender as AnyObject).tag! == 2){
-            nomeObj.text = carne[(sender as AnyObject).tag!]
-            paginaAtual = (sender as AnyObject).tag!
+        if(indexPath.item == 2){
+            nomeObj.text = carne[indexPath.item]
+            MudaIcones(paginaAtual : paginaAtual, novaPagina: indexPath)
+            paginaAtual = indexPath
             porcentagemPaga.text = ""
             valorTotalDoImposto.text = ""
             valorDoProdutoSemImposto.text = ""
             
         }
-        if((sender as AnyObject).tag! == 3){
-            nomeObj.text = carne[(sender as AnyObject).tag!]
-            paginaAtual = (sender as AnyObject).tag!
+        if(indexPath.item == 3){
+            nomeObj.text = carne[indexPath.item]
+            MudaIcones(paginaAtual : paginaAtual, novaPagina: indexPath)
+            paginaAtual = indexPath
             porcentagemPaga.text = ""
             valorTotalDoImposto.text = ""
             valorDoProdutoSemImposto.text = ""
         }
+        
     }
+    //Funcao chamada toda a vez que se troca de pagina ou card que apaga as informacoes da pagina antiga e as deixa em branco e Coloca o Nome da pagina selecionada
+//    @IBAction func MUDAASCOISAS(_ sender: Any) {
+////        if((sender as AnyObject).tag! == 0){
+////            //Coloca o nome da pagina selecionada
+////            nomeObj.text = carne[(sender as AnyObject).tag!]
+////            MudaIcones(paginaAtual: paginaAtual, novaPagina: (sender as AnyObject).tag!)
+////            //Seta a variavel de pagina atual para o programa saber onde esta
+////            paginaAtual = (sender as AnyObject).tag!
+////
+////            //apaga as informacoes da tela antiga
+////            porcentagemPaga.text = ""
+////            valorTotalDoImposto.text = ""
+////            valorDoProdutoSemImposto.text = ""
+////        }
+////        if((sender as AnyObject).tag! == 1){
+////            nomeObj.text = carne[(sender as AnyObject).tag!]
+////            paginaAtual = (sender as AnyObject).tag!
+////            porcentagemPaga.text = ""
+////            valorTotalDoImposto.text = ""
+////            valorDoProdutoSemImposto.text = ""
+////        }
+////        if((sender as AnyObject).tag! == 2){
+////            nomeObj.text = carne[(sender as AnyObject).tag!]
+////            paginaAtual = (sender as AnyObject).tag!
+////            porcentagemPaga.text = ""
+////            valorTotalDoImposto.text = ""
+////            valorDoProdutoSemImposto.text = ""
+////
+////        }
+////        if((sender as AnyObject).tag! == 3){
+////            nomeObj.text = carne[(sender as AnyObject).tag!]
+////            paginaAtual = (sender as AnyObject).tag!
+////            porcentagemPaga.text = ""
+////            valorTotalDoImposto.text = ""
+////            valorDoProdutoSemImposto.text = ""
+////        }
+//    }
     
     
     // Funcao chamada pelo botao que pega o valor colocado no textfield e calcula o imposto para o produto selecionado
@@ -115,7 +174,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
         usuarioResponde.resignFirstResponder()
         
         
-        if (paginaAtual == 0) {
+        if (paginaAtual.item == 0) {
             
             // Joga o conteudo do textfield em uma variavel
             if let txt = usuarioResponde.text {
@@ -138,7 +197,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
                 
             }
         }
-        if (paginaAtual == 1) {
+        if (paginaAtual.item == 1) {
             if let txt = usuarioResponde.text {
                 let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
                 if let calculo = Float(txtfixed){
@@ -152,7 +211,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
             }
             
         }
-        if (paginaAtual == 2) {
+        if (paginaAtual.item == 2) {
             if let txt = usuarioResponde.text {
                 let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
                 if let calculo = Float(txtfixed){
@@ -165,7 +224,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
                 }
             }
         }
-        if (paginaAtual == 3) {
+        if (paginaAtual.item == 3) {
             if let txt = usuarioResponde.text {
                 let txtfixed = txt.replacingOccurrences(of: ",", with: ".")
                 if let calculo = Float(txtfixed){

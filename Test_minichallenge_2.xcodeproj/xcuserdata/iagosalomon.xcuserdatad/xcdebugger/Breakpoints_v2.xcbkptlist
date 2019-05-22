@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test_minichallenge_2/ViewController-tela-2.swift"
-            timestampString = "579723637.809078"
+            timestampString = "580249428.052176"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "ViewController_tela_2"
             landmarkType = "3">
          </BreakpointContent>

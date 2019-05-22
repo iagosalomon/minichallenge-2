@@ -26,6 +26,10 @@
 		7D6722372278E183000A3B54 /* Test_minichallenge_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722362278E183000A3B54 /* Test_minichallenge_2Tests.swift */; };
 		7D6722422278E183000A3B54 /* Test_minichallenge_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6722412278E183000A3B54 /* Test_minichallenge_2UITests.swift */; };
 		7DB42C442280D14C0091EA75 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */; };
+		7DF897002295D6700082DDDE /* cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF896FF2295D6700082DDDE /* cell.png */; };
+		7DF897042295D6C10082DDDE /* beerPB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF897012295D6C10082DDDE /* beerPB.png */; };
+		7DF897052295D6C10082DDDE /* cellPB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF897022295D6C10082DDDE /* cellPB.png */; };
+		7DF897062295D6C10082DDDE /* steakPB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF897032295D6C10082DDDE /* steakPB.png */; };
 		878DC760228B0AFC00BB900D /* gasoline.png in Resources */ = {isa = PBXBuildFile; fileRef = 878DC75F228B0AFC00BB900D /* gasoline.png */; };
 		87AC680022946C1500AD3391 /* ISS.png in Resources */ = {isa = PBXBuildFile; fileRef = 87AC67FF22946C1500AD3391 /* ISS.png */; };
 		87AE2C562289EC96003CCDB0 /* ViewController-tela-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */; };
@@ -78,6 +82,10 @@
 		7D6722412278E183000A3B54 /* Test_minichallenge_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_minichallenge_2UITests.swift; sourceTree = "<group>"; };
 		7D6722432278E183000A3B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB42C432280D14C0091EA75 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		7DF896FF2295D6700082DDDE /* cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell.png; sourceTree = "<group>"; };
+		7DF897012295D6C10082DDDE /* beerPB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beerPB.png; sourceTree = "<group>"; };
+		7DF897022295D6C10082DDDE /* cellPB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellPB.png; sourceTree = "<group>"; };
+		7DF897032295D6C10082DDDE /* steakPB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = steakPB.png; sourceTree = "<group>"; };
 		878DC75F228B0AFC00BB900D /* gasoline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gasoline.png; sourceTree = "<group>"; };
 		87AC67FF22946C1500AD3391 /* ISS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISS.png; sourceTree = "<group>"; };
 		87AE2C552289EC96003CCDB0 /* ViewController-tela-2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController-tela-2.swift"; sourceTree = "<group>"; };
@@ -169,8 +177,12 @@
 				7D4645A0228BA1CA00353EFD /* UITabBarController.swift */,
 				7D6722282278E183000A3B54 /* Assets.xcassets */,
 				87AE2C5F228A08E3003CCDB0 /* beer.png */,
+				7DF896FF2295D6700082DDDE /* cell.png */,
 				87AE2C60228A08E3003CCDB0 /* Group.png */,
 				878DC75F228B0AFC00BB900D /* gasoline.png */,
+				7DF897012295D6C10082DDDE /* beerPB.png */,
+				7DF897022295D6C10082DDDE /* cellPB.png */,
+				7DF897032295D6C10082DDDE /* steakPB.png */,
 				87AE2C61228A08E3003CCDB0 /* steak.png */,
 				87AE2C572289F980003CCDB0 /* Celltela2.swift */,
 				7D67222A2278E183000A3B54 /* LaunchScreen.storyboard */,
@@ -312,11 +324,15 @@
 				7D464591228B34A500353EFD /* ITBI.png in Resources */,
 				7D46459C228B39EA00353EFD /* IPI.png in Resources */,
 				87AE2C64228A08E3003CCDB0 /* Group.png in Resources */,
+				7DF897042295D6C10082DDDE /* beerPB.png in Resources */,
 				87AC680022946C1500AD3391 /* ISS.png in Resources */,
 				7D67222C2278E183000A3B54 /* LaunchScreen.storyboard in Resources */,
 				878DC760228B0AFC00BB900D /* gasoline.png in Resources */,
+				7DF897002295D6700082DDDE /* cell.png in Resources */,
+				7DF897062295D6C10082DDDE /* steakPB.png in Resources */,
 				87AE2C63228A08E3003CCDB0 /* beer.png in Resources */,
 				7D2BC05222946AC5003695BD /* II.png in Resources */,
+				7DF897052295D6C10082DDDE /* cellPB.png in Resources */,
 				7D6722292278E183000A3B54 /* Assets.xcassets in Resources */,
 				87AE2C65228A08E3003CCDB0 /* steak.png in Resources */,
 				7D6722272278E182000A3B54 /* Main.storyboard in Resources */,
