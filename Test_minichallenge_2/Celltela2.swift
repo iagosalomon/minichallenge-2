@@ -12,6 +12,7 @@ class Celltela2: UICollectionViewCell {
     
     @IBOutlet weak var lablelTela2Cell: UILabel!
     @IBOutlet weak var imagetela2: UIImageView!
-    @IBOutlet weak var botao: UIButton!
+    
+
 }
 
