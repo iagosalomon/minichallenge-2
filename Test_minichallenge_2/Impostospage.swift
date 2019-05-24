@@ -143,9 +143,8 @@ class Impostospage: UIViewController {
                 InformacoesTecnicasDescricao.text = "\(impostosindiretosinformacoes[seletor!])"
                 
                 imagemImpostosPage.image = UIImage(named: impostosindiretosimage[seletor!])
-                self.navigationController?.navigationBar.topItem?.title = "\(impostos[seletor!])"
                 view2.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                self.navigationItem.title = "\(impostos[seletor!])"
+                self.navigationItem.title = "\(impostosindiretos[seletor!])"
                 self.navigationController?.navigationBar.barTintColor = colors[0]
             }
         }

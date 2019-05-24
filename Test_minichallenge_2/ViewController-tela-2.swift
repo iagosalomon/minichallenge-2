@@ -21,7 +21,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
     //Vetores das informacoes dos produtos e das respectivas imagens
     let carne : [String] = ["CARNE","CERVEJA", "CELULAR","GASOLINA"]
     var image :[String] = ["steak.png", "beer.png", "cell.png","gasoline.png"]
-    var imagePB :[String] = ["steakPB.png", "beerPB.png", "cellPB.png","gasoline.png"]
+    var imagePB :[String] = ["steakPB.png", "beerPB.png", "cellPB.png","gasolineP&B.png"]
     
     
     
@@ -126,7 +126,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
         
         // fecha o teclado se ele estiver aberto
         usuarioResponde.resignFirstResponder()
-        
+        if(paginaAtual != []){
         
         if (paginaAtual.item == 0) {
             
@@ -190,6 +190,7 @@ class ViewController_tela_2: UIViewController, UITableViewDelegate, UICollection
                     usuarioResponde.text = ""
                 }
             }
+        }
         }
     }
     

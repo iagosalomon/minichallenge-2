@@ -45,6 +45,8 @@ class ViewController: UIViewController, UICollectionViewDataSource , UICollectio
     
     
     
+    
+    
     // funcao que define oque aparece na collection view
     internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (collectionView.tag == 1){

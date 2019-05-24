@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ICON_1024X1024" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-XQ-Anh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo novo.png" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-XQ-Anh">
                                 <rect key="frame" x="32" y="273" width="350" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="I0h-D2-JQa"/>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ICON_1024X1024" width="1024" height="1024"/>
+        <image name="logo novo.png" width="1024" height="1014"/>
     </resources>
 </document>
